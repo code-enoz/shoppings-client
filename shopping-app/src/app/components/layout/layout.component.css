@@ -1,0 +1,38 @@
+section {
+    overflow-x: hidden;
+    min-height: 100%;
+    text-align: center;
+    /* ensures that the padding and border wont change width & height of an element */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: 11.2% 88.8% 
+}
+
+
+header {
+    grid-column: span 12 ;
+}
+
+aside {
+    grid-column: span 2;
+    background-color:  #e8e8e8;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px 3px;
+    overflow: auto;
+    resize: horizontal;
+    width: 80%;
+    max-width: 100%
+  }
+
+
+main {
+    grid-column: span 10;
+    background-image: url("../../../assets/background/background.jpg");
+   max-height: 100%;
+}
+
+
+
+
+

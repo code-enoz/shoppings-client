@@ -1,0 +1,166 @@
+.mainContainer{
+  background-color: white;
+    width: 100%;
+    height: 100%;  
+}
+
+.cartModal{
+    height: 30%;
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 20%;
+    background-color: blanchedalmond;
+    border-radius: 3%;
+    position: fixed;
+    z-index: 1;
+}
+
+.dana{
+    font-weight: bolder;
+}
+
+.mainContainer > .menuContainer{
+    display: block;
+    position: fixed;
+    
+}
+
+.menuContainer{
+    border: 2px solid black;
+    /* margin-top: 5px; */
+    left: 0%;
+    top: 9.5%;
+    height: 89.8%;
+    width: 10%;
+   
+}
+
+
+.productsContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 358px;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    max-width: 90%;
+  
+}
+
+.productsContainerBorder{
+    border-bottom: 1vh solid gray;
+    width: 87.2%;
+    margin-left: 5.45%;
+}
+
+.productsBlock{
+  
+    background-color: #bbbfca;
+    height: 33%;
+    width: 33%;
+    
+}
+
+.categories {
+    cursor: pointer;
+}
+
+.all{
+    cursor: pointer;
+}
+
+
+
+
+.productImg{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.image{
+    height: 15vh;
+    width: 15vh;
+}
+
+.categoriesContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-left: 5.45%;
+    width: 87.2%;
+    border-bottom: 1vh solid gray;
+    box-sizing: border-box;
+    box-shadow: 5%, 5%, 5%;
+    
+}
+
+.categoriesContainer > * {
+    font-size: larger;
+    font-weight: bolder;
+   
+}
+
+.marketTitle{
+    font-weight: bolder;
+}
+
+
+
+
+/* material ui : */
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .example-card{
+      margin-top: 2.5%;
+      margin-left: 2.5%;
+      background-color: white;
+  }
+
+
+ 
+ .productNameInt{
+     margin-left: 7%;
+ }
+
+ .productPriceInt{
+     margin-left: 8.5%;
+ }
+
+ .productName{
+    display:flex;
+ }
+
+ .productPrice{
+     display: flex;
+ }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}

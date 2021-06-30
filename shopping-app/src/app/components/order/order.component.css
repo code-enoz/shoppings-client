@@ -1,0 +1,92 @@
+.orderContainer{
+    margin-top: 2%;
+    margin-left: 28%;
+    height: 91.3%;
+    border: 2px solid black;
+    width: 46.7%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px;
+}
+
+.shipDate{
+    height: 5%;
+    width: 40%;
+    border-radius: 1%;
+    margin-left: 8.5%;
+}
+.shipToCity{
+    height: 5%;
+    width: 40%;
+    border-radius: 1%;
+    margin-left: 7%;
+}
+.shipToStreet{
+    height: 5%;
+    width: 40%;
+    border-radius: 1%;
+    margin-left: 4%;
+}
+
+.itemsContainer{
+    /* height: 50%; */
+    height: 27.4vh;
+    max-height: 27.4vh;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5%;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.item{
+    height: 17vh;
+    width: 17vh;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px;
+    background-color: rgba(128, 128, 128, 50%);
+
+}
+
+.searchItem{
+    height: 5%;
+    width: 40%;
+    border-radius: 1%;
+    margin-left: 1%;
+}
+
+.submitOrder{
+    height: 10%;
+    width: 25%;
+}
+
+.cityLabel{
+    margin-right: 7%;
+}
+
+.creditCardNumber{
+    margin-left: 6%;
+    border-radius: 1%;
+    height: 5%;
+    width: 40%;
+}
+
+.successfulCartOrderedModal{
+    background-color: rgb(128, 128, 128);
+    border-radius: 5%;
+    z-index: 1;
+    position: fixed;
+    left: 40%;
+    right: 40%;
+    top: 40%;
+    bottom: 40%;
+}
+
+.receiptButton{
+    background-color: rgb(128, 128, 128);;
+    color: blue;
+    border: 2px solid rgb(128, 128, 128);; /* Green */
+    cursor: pointer;
+}

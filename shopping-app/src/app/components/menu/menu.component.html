@@ -1,0 +1,57 @@
+<div class="menuContainer"  >
+<div class="customerMenu" *ngIf = "isCustomer" >
+
+     
+<h1 class="menuTitle">CART</h1>
+<h3 class="cartTitle">current items in cart:</h3>
+
+<div class="cartItems">
+    
+    
+   
+    <div class="cartItem" *ngFor="let currentItem of cartItems">
+    <mat-card  class="example-card"   >
+       
+        <mat-card-content class="card-content" >
+         
+          
+                
+                <mat-icon *ngIf="!this.ordersService.isOrderPage">
+                <span class="material-icons-outlined" title="remove item" (click)="removeProductFromCart(currentItem)" >
+                  clear
+                  </span>
+                </mat-icon>
+
+                <div class="currentItemName">{{currentItem.name}}</div>
+                <div class="currentItemPrice">{{currentItem.price}}</div>
+                <!-- TEST -->
+                <div class="currentItemAmount">{{currentItem.amount}}</div>
+        </mat-card-content>
+      
+      </mat-card>
+    </div>
+
+</div>
+<br>
+
+<button mat-flat-button color="primary" type="button"  (click)="submitOrder()">Submit</button>
+</div>
+<div class="adminMenu" *ngIf="!isCustomer">
+    <div class="productToHandleContainer">
+      
+        <h2 class="productToHandleTitle">Product Details:</h2>
+        <label>product name:</label>
+        <input class="productToHandleName" type="text" [(ngModel)]="productsService.productToHandle.name" (keyup)="updateProductName($event.target)"/> <br><br/>
+        
+        <label>product price:</label>
+        <input class="productToHandlePrice" type="number" [(ngModel)]="productsService.productToHandle.price" (keyup)="updateProductPrice($event.target)"/><br><br/>
+        <label>product image:</label>
+        <input type="file" accept="image/*" (change)="updateProductImage($event.target)" />
+        <label>product category:</label>
+        <input class="productToHandleCategory" type="text" [(ngModel)]="productsService.productToHandle.categoryId"(keyup)="updateProductCategory($event.target)"/><br><br/>
+        <input type="button" class="updateProduct" value="Submit" (click)="updateProduct(productToUpdate)" *ngIf="usersService.adminIsToUpdate" />
+        <input type="button" class="updateProduct" value="Create" (click)="createProduct(productToUpdate)" *ngIf="!usersService.adminIsToUpdate" />
+
+    </div>
+</div>
+</div>

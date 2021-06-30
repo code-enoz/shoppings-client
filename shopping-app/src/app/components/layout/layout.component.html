@@ -1,0 +1,25 @@
+<section>
+    
+
+    <header>
+       <app-header></app-header>
+    </header>
+
+    <aside *ngIf = "this.usersService.isMainPage">
+        <app-menu></app-menu>
+    </aside>
+   
+  
+        <main  [ngStyle]="{'grid-column': (this.usersService.isMainPage) ? 'span 10' : 'span 12'}">
+
+     
+        <router-outlet></router-outlet>
+    </main>
+
+    
+
+   
+
+   
+
+</section> 

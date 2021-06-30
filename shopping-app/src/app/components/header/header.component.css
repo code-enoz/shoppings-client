@@ -1,0 +1,27 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+ .logout{
+   background-color: red;
+   margin-left: 80%;
+   height: 50%;
+   border-radius: 100%;
+   font-weight: bolder;
+ }
+
+ .mat-logout{
+   margin-left: 75%;
+ }
+ .mat-home{
+   cursor: pointer;
+   font-size: 175%;
+   margin-left: 1.5%;
+ }
+
+ .mat-exit{
+   font-size: 175%;
+   cursor: pointer;
+   margin-left: 80%;
+
+ }

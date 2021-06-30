@@ -1,0 +1,73 @@
+<div class="mainContainer">
+   
+  <!-- <div class="cartModal" *ngIf="isNotFinishedShopping">
+  <label class="dana"> You haven't finished to order your last cart. Would you like to continue your last shopping?</label>
+  <button mat-raised-button (click)="provideLastCart()">Yes</button><br>
+  <button mat-raised-button (click)="provideNewCart()">No</button>
+  </div> -->
+    <!-- <label class="menuContainer">
+        <mat-sidenav-container class="example-container" >
+            My Cart
+            <br>
+            <label for="totalPrice">Cart Total Price:</label>
+            <div name="totalPrice" class="totalPrice">15</div>
+          </mat-sidenav-container>
+    </label> -->
+
+    <h2 class="marketTitle">Market Store:</h2>
+    <div class="categoriesContainer">
+    <div class="all" (click)="getProducts()">All</div>
+    <div class="categories" *ngFor="let currentCategory of categories" (click)="getProductsByCategory(currentCategory.id)">{{currentCategory.name}}</div>
+    </div>
+
+    <div class="productsContainer" >
+        <div class="productsBlock" *ngFor="let currentProduct of products">
+
+    <mat-card  class="example-card"  >
+        <mat-card-content >
+         
+            <div class="product" >
+
+               
+                <div class="productImage">
+
+                <img class="image" src="../../../assets/products/{{currentProduct.imageUrl}}"/>
+                </div>
+                <br>
+                <div class="productDetails">
+                
+                <div class="productName" style="color: black;">name: <label class="productNameInt"> {{currentProduct.name}}</label> </div>
+                
+                <div class="productPrice" style="color: black;">price: <label class="productPriceInt"> {{currentProduct.price}} ₪</label> </div>
+                </div>
+       
+                </div>
+        
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="addToCart(currentProduct)" >Add To Cart</button>
+         
+        </mat-card-actions>
+      </mat-card>
+
+    </div> 
+    </div>
+    <div class="productsContainerBorder"></div>
+
+
+
+    <!-- <div class="productsContainer" >
+    <div class="productsBlock" *ngFor="let currentProduct of products">
+    <div class="product">
+    <div class="productId">{{currentProduct.id}}</div>
+    <div class="productImage">
+    <img class="image" src="../../../assets/products/{{currentProduct.imageUrl}}"/>
+    </div>
+    <div class="productName">{{currentProduct.name}}</div>
+    <div class="productPrice">{{currentProduct.price}} $ / ₪</div>
+    <input type="button" class="addToCart" value="Add To Cart" (click)="addToCart(currentProduct)">
+    </div>
+    </div> 
+    </div> -->
+
+</div>

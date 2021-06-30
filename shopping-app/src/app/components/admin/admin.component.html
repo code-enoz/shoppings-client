@@ -1,0 +1,32 @@
+<div class="adminContainer">
+   
+    <h1 class="adminTitle">Welcome Admin</h1>
+     <div class="numberOfOrders">current number of orders:   {{numberOfOrders}}</div><br>
+    <button mat-flat-button color="primary" type="button" value="Add Product" (click)="[createProduct()]">Create Product</button>
+    <div class="productsContainer" >
+        <div class="products" *ngFor="let currentProduct of products">
+            
+
+
+            <mat-card class="example-card">
+            
+                <mat-card-content>
+                  
+                  <div class="product">
+                    <div class="handleProduct">
+                        </div>
+                    <div class="productName">{{currentProduct.name}}</div>
+                    <div class="productPrice">{{currentProduct.price}}</div>
+                   </div>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button (click)="[handleProduct(currentProduct)]">Update Product</button>
+                
+                </mat-card-actions>
+              </mat-card>
+
+        
+        
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+.menuContainer{
+   
+    height: 95%;
+    overflow-x: hidden;
+
+}
+
+
+
+.menuTitle{
+    
+    margin-top: 7%;
+}
+
+.cartTitle{
+    margin-top: 15%;
+}
+
+.cartItems{
+
+    /* height: 40vh; */
+    height: 50vh;
+    max-width: 99%;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+
+
+.customerMenu{
+    height: auto;
+}
+
+.cartItem{
+
+height: 20vh;
+width: 15vh;
+margin-left: 1%;
+margin-top: 2vh;
+
+}
+
+
+
+.material-icons-outlined{
+  
+    cursor: pointer;
+    
+}
+
+
+.example-card{
+   
+    height: 22vh;
+    width: 15vh;
+    background-color: rgba(0, 0, 255, 50%);     
+   
+}
+
+
+

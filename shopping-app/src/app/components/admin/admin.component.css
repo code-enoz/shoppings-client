@@ -1,0 +1,41 @@
+.productsContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    overflow-y: auto;
+    max-width: 50%;
+    max-height: 262px;
+    flex-wrap: wrap;
+    margin-left: 27%;
+    margin-top: 5%;
+    
+}
+
+
+.newProduct{
+    border-radius: 3%;
+    box-shadow: 2% 2% 2%;
+}
+
+.adminTitle{
+    font-family: Helvetica ;
+    margin-top: 2%;
+}
+ 
+
+.product{
+    border: 2px solid black;
+}
+
+.products{
+    background-color: #bbbfca;
+    height: 33%;
+    width: 33%;
+}
+
+
+
+.example-card{
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}

@@ -1,0 +1,55 @@
+<div class="orderContainer">
+    <h2>Order Details:</h2>
+    <label class="shipLabel">ship date:</label>
+    <input type="date" class="shipDate" [(ngModel)]="order.deliveryDate"/>
+    <br>
+    <label class="cityLabel">city to ship:</label> 
+    <mat-form-field appearance="fill">
+      <mat-label>Cities</mat-label>
+      <select matNativeControl required [(ngModel)]="order.city">
+        <option value="Jerusalem">Jerusalem</option>
+        <option value="Tel-aviv Jaffa">Tel-Aviv Jaffa</option>
+        <option value="Haifa">Haifa</option>
+        <option value="Rishon-Lezion">Rishon-Lezion</option>
+        <option value="Petah-Tikwa">Petah-Tikva</option>
+        <option value="Ashdod">Ashdod</option>
+        <option value="Natanya">Natanya</option>
+        <option value="Beer-Sheva">Beer-Sheva</option>
+        <option value="Bnei-Brak">Bnei-Brak</option>
+        <option value="Holon">Holon</option>
+
+      </select>
+    </mat-form-field>
+    <br>
+    <label class="streetLabel">street to ship:</label>
+    <input type="text" class="shipToStreet" [(ngModel)]="order.street" placeholder="dblcl to enter default value" (dblclick)="enterUserStreet()"/>
+    <br>
+    <!-- <br> -->
+    <label class="creditCardNumberLabel">CC 4 Digits:</label>
+    <!-- pattern="^[1-9][0-9]{3,5}$" -->
+    <!-- pattern="[0-9][0-9][0-9]?[0-9]?" -->
+    <input type="number" class="creditCardNumber" [(ngModel)]="order.cr4Digits" pattern="^([9999|[0-9]\d?)$" />
+    <br>
+   
+    <label class="cartPrice">cart total price: {{cartPrice}}</label>
+    <div class="itemsContainer" >
+        <div class="item" *ngFor="let currentItem of cartItems">
+            <div class="itemName">{{currentItem.name}}</div>
+            <div class="itemPrice">{{currentItem.price}}</div>
+            <div class="itemAmount">{{currentItem.amount}}</div>
+        </div>
+    </div>
+    <input type="button" class="submitOrder" value="Submit Order" (click)="submitOrder()"  />
+</div>
+
+
+
+<div class="successfulCartOrderedModal" *ngIf="isOrderComplete">
+  <h2 class="modalHeader"> Your requirment done successfuly!</h2>
+  
+  <span class="material-icons">
+    receipt
+    </span>
+  <label class="receipt"> for download receipt click <input type="button" class="receiptButton" value="here" (click)="saveFile()"/></label><br>
+  <input type="button" value="Accept" (click)="finishShopping()"/>
+</div>

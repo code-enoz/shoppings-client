@@ -1,0 +1,24 @@
+<div class="loginPage">
+  
+<div class="loginContainer">
+<h1 class="title"> Hello User, Please Login: </h1>
+<form class="example-form">
+    <mat-form-field class="example-full-width" >
+      <mat-label>Username</mat-label>
+     <input matInput placeholder="Enter username" name="username" [(ngModel)]="userLoginDetails.username" class="usernameInput" value="">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" >
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Enter password" name="password" [(ngModel)]="userLoginDetails.password" class="passwordInput" >
+    </mat-form-field>
+    <br><br>
+    <div class="example-button-row">
+      <button mat-raised-button (click)="login()">Login</button>
+      <button mat-raised-button (click)="register()">Register</button>
+     
+    </div>
+  </form>
+
+</div>
+</div>

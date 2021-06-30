@@ -1,0 +1,38 @@
+<div class="registrationPage">
+  
+    <div class="registerContainer">
+    <h1 class="title"> Welcome, Please Register: </h1>
+    <form class="example-form" >
+        <mat-form-field class="example-full-width" >
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter name" name="name" [(ngModel)]="userSignupDetails.name" class="nameInput" value="">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width" >
+            <mat-label>Family name</mat-label>
+            <input matInput placeholder="Enter family name" name="familyName" [(ngModel)]="userSignupDetails.familyName" class="familyNameInput" value="">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width" >
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter email" name="email" [(ngModel)]="userSignupDetails.email" class="emailInput" value="">
+          </mat-form-field>
+          <br>
+        <mat-form-field class="example-full-width" >
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter username" name="username" [(ngModel)]="userSignupDetails.username" class="usernameInput">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width" >
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter password" name="password" [(ngModel)]="userSignupDetails.password" class="passwordInput">
+          </mat-form-field>
+        <br><br>
+        <div class="example-button-row">
+          <button mat-raised-button (click)="register()">Register</button>
+          <button mat-raised-button (click)="login()">Login</button>
+         
+        </div>
+      </form>
+    
+    </div>
+    </div>

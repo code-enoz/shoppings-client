@@ -1,0 +1,9 @@
+<p class="header">
+    <mat-toolbar>
+      <span>Shoppings Online</span>
+
+      <mat-icon class="mat-exit" *ngIf="this.usersService.isMainPage" title="logout" (click)="logout()">exit_to_app</mat-icon>
+        <mat-icon class="mat-home" *ngIf="this.usersService.isMainPage && !this.usersService.disableForAdmin" title="home page" (click)="navMain()">home</mat-icon>
+     
+    </mat-toolbar>
+  </p>

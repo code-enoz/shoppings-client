@@ -1,0 +1,50 @@
+.registerContainer{
+    border-radius: 3%;
+    margin-top: 3%;
+    margin-left: 33%;
+    background-color: rgba(128, 128, 128, 50%);
+    width: 35%;
+    height: 35%;
+    overflow-y: auto;
+}
+
+.title{
+    font-family: Garamond, serif;
+    font-weight: bolder;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+      margin-top: 3%;
+    width: 40%;
+  }
+
+  .nameInput{
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .familyNameInput{
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .emailInput{
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .usernameInput{
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .passwordInput{
+    margin-left: 20%;
+    cursor: pointer;
+  }
